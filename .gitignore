@@ -1,0 +1,20 @@
+echo ".DS_Store" >> ~/.gitignore_global
+echo "._.DS_Store" >> ~/.gitignore_global
+echo "**/.DS_Store" >> ~/.gitignore_global
+echo "**/._.DS_Store" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+/.DS_Store
+/Code/.DS_Store
+/Code/Notebooks/.ipynb_checkpoints
+
+/data/*
+/data/data_schemas/*
+/data/diabetes_vocab/*
+./Paper/Löhr_Tim_MADI40SS20_final_presentation.aux
+./Paper/Löhr_Tim_MADI40SS20_final_presentation.bbl
+./Paper/Löhr_Tim_MADI40SS20_final_presentation.blg
+./Paper/Löhr_Tim_MADI40SS20_final_presentation.log
+./Paper/Löhr_Tim_MADI40SS20_final_presentation..synctex.gz
+./Paper/.DS_Store
+./imgs/.DS_Store
+./Presentation/.DS_Store
