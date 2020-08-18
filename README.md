@@ -3,7 +3,7 @@
     <img src="./imgs/techfak_logo.jpg" width="700" height="250">
     <hr>
     <h1 style="color:black">Identifying a Trial Population for Clinical Studies on Diabetes Drug Testing with Neural Networks<h1>
-    <h3 style="color:black">Tim Löhr and Philipp Schlieper<h3>
+    <h3 style="color:black">Tim Löhr<h3>
     <img src="./imgs/madi_logo.png" width="400">
   </div>
   <hr>
@@ -48,11 +48,11 @@ This project models an end-to-end workflow of implementing AI for the clinical e
 ```
 ## Links to Ressources
 
-- Clinical_EDA as [iPython](https://mad-srv.informatik.uni-erlangen.de/MadLab/industry-4.0/seminar-i4.0/ss2020/anomaly-detection-with-neural-network-in-time-series-data/-/blob/master/Code/Notebooks/Machine_Learning.ipynb)
-- Machine_Learning as [iPython](https://mad-srv.informatik.uni-erlangen.de/MadLab/industry-4.0/seminar-i4.0/ss2020/anomaly-detection-with-neural-network-in-time-series-data/-/blob/master/Code/Notebooks/Clinical_EDA.ipynb)
-- Explainable_AI as [iPython](https://mad-srv.informatik.uni-erlangen.de/MadLab/industry-4.0/seminar-i4.0/ss2020/anomaly-detection-with-neural-network-in-time-series-data/-/blob/master/Code/Notebooks/Explainable_AI.ipynb)
-- Final Presentation [PDF](https://mad-srv.informatik.uni-erlangen.de/MadLab/industry-4.0/seminar-i4.0/ss2020/anomaly-detection-with-neural-network-in-time-series-data/-/blob/master/Presentation/L%C3%B6hr_Tim_MADI40SS20_final_presentation.pdf)
-- Final Paper [PDF](https://mad-srv.informatik.uni-erlangen.de/MadLab/industry-4.0/seminar-i4.0/ss2020/anomaly-detection-with-neural-network-in-time-series-data/-/blob/master/Paper/L%C3%B6hr_Tim_MADI40SS20_paper.pdf)
+- Clinical_EDA as [iPython](https://github.com/Mavengence/Machine_Learning_in_the_Industry_4.0_Seminar_SS2020.FAU/blob/master/Code/Notebooks/Clinical_EDA.ipynb)
+- Machine_Learning as [iPython](https://github.com/Mavengence/Machine_Learning_in_the_Industry_4.0_Seminar_SS2020.FAU/blob/master/Code/Notebooks/Machine_Learning.ipynb)
+- Explainable_AI as [iPython](https://github.com/Mavengence/Machine_Learning_in_the_Industry_4.0_Seminar_SS2020.FAU/blob/master/Code/Notebooks/Explainable_AI.ipynb)
+- Final Presentation as [PDF](https://github.com/Mavengence/Machine_Learning_in_the_Industry_4.0_Seminar_SS2020.FAU/blob/master/Presentation/L%C3%B6hr_Tim_MADI40SS20_final_presentation.pdf)
+- Final Paper as [PDF](https://github.com/Mavengence/Machine_Learning_in_the_Industry_4.0_Seminar_SS2020.FAU/blob/master/Paper/L%C3%B6hr_Tim_MADI40SS20_paper.pdf)
 
 ## Ressources
 
