@@ -7,16 +7,43 @@ from sklearn.impute import SimpleImputer
 
 
 def select_first_encounter(df):
+    """
+        INPUT:
+            - df (Pandas DataFrame): dataset
+        
+        OUTPUT:
+            - returns for multiple encounder_id keys just the first found one and ignores the rest
+    """
     sorted_df = df.sort_values(by='encounter_id').copy()
     return sorted_df.loc[sorted_df.groupby('patient_nbr')['encounter_id'].head(1).index]
 
 
 def select_model_features(df, categorical_col_list, numerical_col_list, PREDICTOR_FIELD, grouping_key='patient_nbr'):
+    """
+        INPUT:
+            - df (Pandas DataFrame): dataset
+            - categorical_col_list (string array): array of all categorical feature names
+            - numerical_col_list (string array): array of all numerical feature names
+            - PREDICTOR_FIELD: the label which is time_in_hospitalization
+            - grouping_key: feature to be grouped on later
+        
+        OUTPUT:
+            - returns the DataFrame for all this feautres
+    """
     selected_col_list = [grouping_key] + [PREDICTOR_FIELD] + categorical_col_list + numerical_col_list   
     return df[selected_col_list]
 
 
 def aggregate_dataset(df, grouping_field_list,  array_field):
+    """
+        INPUT:
+            - df (Pandas DataFrame): dataset
+            - grouping_field_list (string array): array of all grouping field feature names
+            - array_field (string array): array of array field feature names
+        
+        OUTPUT:
+            - returns the aggregated DataFrame for all this feautres grouped on features
+    """
     df = df.groupby(grouping_field_list)['encounter_id', array_field].apply(lambda x: x[array_field].values.tolist()).reset_index().rename(columns={0: array_field + "_array"}) 
     dummy_df = pd.get_dummies(df[array_field + '_array'].apply(pd.Series).stack()).sum(level=0)
     dummy_col_list = [x.replace(" ", "_") for x in list(dummy_df.columns)] 
@@ -28,6 +55,16 @@ def aggregate_dataset(df, grouping_field_list,  array_field):
 
     
 def preprocess_df(df, categorical_col_list, numerical_col_list, predictor):
+    """
+        INPUT:
+            - df (Pandas DataFrame): dataset
+            - categorical_col_list (string array): array of all categorical feature names
+            - numerical_col_list (string array): array of all numerical feature names
+            - predictor (string): the label which is time_in_hospitalization
+        
+        OUTPUT:
+            - returns the DataFrame with the imputed and dtype changed attributes
+    """
     temp_df = df.copy()
     imp = SimpleImputer(strategy='mean')
     temp_df[predictor] = df[predictor].astype(float)
@@ -37,6 +74,14 @@ def preprocess_df(df, categorical_col_list, numerical_col_list, predictor):
 
 
 def patient_dataset_splitter(df, patient_key='patient_nbr'):
+    """
+        INPUT:
+            - df (Pandas DataFrame): dataset
+            - patient_key (string ): patient_nbr
+        
+        OUTPUT:
+            - works like train_test_split but directly produces stratified train, test and val sets
+    """
     test_percentage= 0.2
     val_percentage = 0.2
     PATIENT_ID_FIELD = patient_key
