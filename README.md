@@ -9,8 +9,9 @@
   <hr>
 </div>
 
-## Motivation
-This project models an end-to-end workflow of implementing AI for the clinical environment. A possible use-case such as the selection of patients for a novel treatment or drug will be conducted, by estimating the hospitalization time with a Tensorflow regression Neural Network. Using a synthetic dataset from the UCI Diabetes readmission dataset, the expected days for a person being hospitalized after certain conditions or treatments will be predicted. This result is used to decide whether a patient is applicable to be included in the clinical trial. If so, there needs to be a clear explanation of the prediction and possible risk factors. This project shows the importance of splitting the data appropriately without data leakage and evaluating the results to make it transparent for the official use case, e.g. being accepted by the Arzneimittelbeho ̈rde or FDA as a decision support tool for hospitals or doctors.
+## Abstract
+This project aims to model an end-to-end workflow of implementing Artificial Intelligence (AI) for the clinical environment. A possible use-case such as the selection of patients for a novel treatment or drug will be conducted by estimating the hospitalization time with a Neural Network.
+The diabetes readmission dataset from the University of California, Irvine (UCI) Diabetes was used for this project. The trial population is selected by predicting the expected days for a person being hospitalized. Then and arbitrary boundary is set for chosing whether or not this patient is shall be included or not. If so, a clear explanation of the how the prediction was calculated and additional possible risk factors will be given in order to make the workflow explainable. This project shows that given a proper explanatory approach, AI can be a useful tool for the modern clinical environment. The workflow finally reveals that AI can be a beneficial support tool for doctors, e.g. by effectively choose possibly suitable patients in the patient selection process.
 
 
 ### Structure
