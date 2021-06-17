@@ -5,6 +5,9 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 
+"""
+ The following code is licensed by www.udacity.com
+"""
 
 def select_first_encounter(df):
     """

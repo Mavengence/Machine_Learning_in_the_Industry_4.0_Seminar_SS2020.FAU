@@ -173,7 +173,10 @@ def build_vocab_files(df, categorical_column_list, default_value='00'):
         v_file = write_vocabulary_file(df[c].unique(), c, default_value)
         vocab_files_list.append(v_file)
     return vocab_files_list
-          
+  
+"""
+ The following code is licensed by www.udacity.com
+"""
       
 def create_tf_categorical_feature_cols(high_kardinality, low_kardinality, vocab_dir=vocab_dir):
     """    
