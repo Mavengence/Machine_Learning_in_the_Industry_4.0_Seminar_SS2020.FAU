@@ -79,7 +79,7 @@ I use python version 3.7.4
 
 ## License
 
-This project was done during my Seminar Machine Learning in the Industry 4.0 from the Machine Learning and Data Analytics Lab at the Friedrich Alexander University in Erlangen-Nürnberg.
+This project was done during my Seminar Machine Learning in the Industry 4.0 from the Machine Learning and Data Analytics Lab at the Friedrich Alexander University in Erlangen-Nürnberg. Some parts of the code are under the licence of www.udacity.com. Those parts can mostly be found in the scripts section.
 
 ## Acknowledgments
 
